@@ -9,6 +9,8 @@ EXPOSE 28015
 
 WORKDIR ${STEAMAPPDIR}
 
+RUN chown -R steam:steam "${STEAMAPPDIR}"
+
 COPY ./entry.sh ./
 
 ENTRYPOINT ["./entry.sh" ]
