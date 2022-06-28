@@ -13,4 +13,6 @@ RUN chown -R steam:steam "${STEAMAPPDIR}"
 
 COPY ./entry.sh ./
 
+USER steam
+
 ENTRYPOINT ["./entry.sh" ]
