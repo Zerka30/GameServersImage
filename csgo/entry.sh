@@ -5,6 +5,7 @@ working_dir="${WORKINGDIR}"
 steamcmd_dir=${STEAMCMDDIR}
 server_dir="${STEAMAPPDIR}"
 csgo_dir="${server_dir}/csgo"
+server_installed_lock_file="${server_dir}/installed.lock"
 
 
 start() {
