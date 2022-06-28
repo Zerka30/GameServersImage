@@ -5,6 +5,7 @@ working_dir="${WORKINGDIR}"
 steamcmd_dir=${STEAMCMDDIR}
 server_dir="${STEAMAPPDIR}"
 rust_dir="${server_dir}/rust"
+server_installed_lock_file="${server_dir}/installed.lock"
 
 start() {
     echo '> Starting server ...'
